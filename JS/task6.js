@@ -7,7 +7,7 @@ let numbers = []
 do {
     input = prompt('Введіть, будь ласка, число');
     Number(input)
-    if (input != Number(input) && input != null) {
+    if (input !== String(input) && input !== null) {
         alert('Ви ввели не число. Спробуйте, будь ласка, ще')
         continue
     }; 
